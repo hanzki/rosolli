@@ -3,7 +3,7 @@
 #include "card.h"
 
 enum DECK_TYPE {
-	DECK_NONETYPE = 0, DECK_FACEUP = 1, DECK_SPREAD = 2, DECK_TEST = 3
+	DECK_NONETYPE = 0x0, DECK_FACEUP = 0x1, DECK_SPREAD = 0x2
 };
 
 class Deck {

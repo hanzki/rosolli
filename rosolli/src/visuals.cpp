@@ -177,7 +177,7 @@ void Visuals::draw_deck(DECK_POS pos, Deck* deck) {
 		return;
 	SUITE suit;
 	int val;
-	if (deck->type == DECK_FACEUP) {
+	if (deck->type & DECK_FACEUP) {
 		suit = deck->peek_card()->suit;
 		val = deck->peek_card()->val;
 	} else {
